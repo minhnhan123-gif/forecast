@@ -1,0 +1,157 @@
+.header {
+  width: 900px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  margin-left: 50px;
+  position: relative;
+  top: 20px;
+  color: var(--color-text-secondary);
+
+}
+
+.header_location {}
+
+.header_icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.header_country {
+  font-weight: 400;
+}
+
+.header_city {
+  font-weight: 600;
+}
+
+
+/* Search Button */
+.search_bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg-border);
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 300px;
+}
+
+.search_icon {
+  color: #888;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search_bar input {
+  background-color: transparent;
+  height: 100%;
+  border: none;
+  color: var(--color-text-primary);
+  outline: none;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.darkmode_label {
+  width: 80px;
+  height: 40px;
+  position: relative;
+  display: block;
+  background-color: var(--color-bg);
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.4), inset 0px 0px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+  top: -2px;
+}
+
+.darkmode_label:after {
+  content: '';
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  background: #fff;
+  border-radius: 180px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+#darkmode-toggle {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  display: none;
+}
+
+#darkmode-toggle:checked+.darkmode_label {
+  background-color: #faf7f7;
+
+}
+
+#darkmode-toggle:checked+.darkmode_label:after {
+  left: 98%;
+  transform: translateX(-100%);
+  background: linear-gradient(#fafafa);
+}
+
+#mode_sun {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  z-index: 100;
+  left: 8px;
+  color: red;
+  transition: 0.3s;
+}
+
+#mode_moon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  z-index: 100;
+  right: 8px;
+  color: #fff700;
+  opacity: 0.3s;
+}
+
+/* Khi bật Dark Mode */
+#darkmode-toggle:checked+.darkmode_label #mode_sun {
+  opacity: 1;
+}
+
+#darkmode-toggle:checked+.darkmode_label #mode_moon {
+  opacity: 1;
+}
+
+.icon.active {
+  color: #ffcc00;
+}
+
+.darkmode_label:hover:after {
+  width: 44px;
+}
+
+#mode_sun {
+  color: #ff0000;
+  transform: rotate(-90deg) scale(1);
+}
+
+#mode_moon {
+  color: #fff700;
+  transform: rotate(360deg) scale(1);
+}
+
+/* Khi bật Dark Mode */
+.light_mode #mode_sun {
+  transform: scale(0.8);
+}
+
+.darkmode #mode_moon {
+  transform: scale(0.8);
+}

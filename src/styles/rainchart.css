@@ -1,0 +1,10 @@
+.rain_chart {
+  width: 200px;
+  height: auto;
+  position: relative;
+  left: 755px;
+  top: -70px;
+  background-color: var(--color-bg-card);
+  border-radius: 10px;
+  padding-top: 50px;
+}

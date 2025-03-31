@@ -1,0 +1,36 @@
+.content {
+  width: 1000px;
+  height: 600px;
+  background-color: var(--color-bg);
+  border-radius: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-35%);
+}
+
+.seven_weather {
+  color: var(--color-text-secondary);
+  top: 60px;
+  position: relative;
+  left: -365px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* Rain Chart */
+
+.rain_chart {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  color: var(--color-text-secondary);
+
+}
+
+.map_container {
+  width: 900px;
+  position: relative;
+  left: 50px;
+  top: -50px;
+  height: 260px;
+}

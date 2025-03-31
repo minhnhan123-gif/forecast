@@ -1,0 +1,6 @@
+.leaflet_container {
+  width: inherit;
+  height: inherit;
+  border-radius: 30px;
+  overflow: hidden;
+}
